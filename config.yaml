@@ -1,0 +1,32 @@
+# config.yaml - GlyphGuard configuration
+
+# Path to DNS query log to monitor
+log_path: /var/log/dns/queries.log
+
+# ELK/Elasticsearch endpoint for JSON alerts
+elk_endpoint: http://localhost:9200/glyphguard/_doc/
+
+# Cache duration (minutes) to avoid repeated checks for the same domain+client
+cache_minutes: 30
+
+# Similarity threshold (0-100) to flag homograph domains
+similarity_threshold: 90
+
+# Disable ICMP ping fallback, only use DNS resolve
+no_ping: false
+
+# Syslog configuration (for PRTG or central logging)
+syslog:
+  network: ""        # "" -> local unix, or "udp", "tcp"
+  address: ""        # host: port if network is used
+
+# List of legitimate domains (comma-separated alternative to embedded list)
+legit_domains:
+  - google.com
+  - paypal.com
+  - microsoft.com
+  - securemanager.co
+  - bank.example
+
+# Number of concurrent active verification workers
+worker_pool_size: 5
