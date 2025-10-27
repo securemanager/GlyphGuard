@@ -5,7 +5,7 @@ Product Information:
 1. Product Name: GlyphGuard
 2. Author / Manufacturer: Ashkan Ebrahimi | O & TM Secure Manager Co
 3. Release Date: 2025-10-27
-4. Version: 1.0.0
+4. Version: 1.0.1
 
 Description:
 GlyphGuard is a Go-based daemon that monitors DNS query logs, detects
