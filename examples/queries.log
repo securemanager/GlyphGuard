@@ -1,0 +1,14 @@
+# queries.log - Sample DNS queries log for GlyphGuard testing
+
+# Format: client=<IP> query=<domain>
+
+client=192.168.1.101 query=google.com
+client=192.168.1.102 query=xn--goog1e-8ta.com       # malicious / homograph example
+client=192.168.1.103 query=paypal.com
+client=192.168.1.104 query=xn--pypal-8ta.com       # homograph example
+client=192.168.1.105 query=microsoft.com
+client=192.168.1.106 query=securemanager.co
+client=192.168.1.107 query=xn--m1crosoft-9ta.com   # homograph example
+client=192.168.1.108 query=example.com
+client=192.168.1.109 query=bank.example
+client=192.168.1.110 query=xn--b1ank-8ta.com      # homograph example
